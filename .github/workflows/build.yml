@@ -36,7 +36,12 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          export GH_TAG=${GITHUB_REF##*/}
+          if [[ -z "$tagName" ]];then
+            export GH_TAG=${GITHUB_REF##*/}
+          else
+            export GH_TAG=${tagName}
+          fi
+          
           cp README.md bookmark
           zip -r bookmark.zip bookmark/*
           # https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a-release
