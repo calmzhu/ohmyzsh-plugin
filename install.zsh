@@ -1,3 +1,6 @@
+
+export ZSH_CUSTOM=$1
+
 function error {
     local _message=$1
     echo -e "\033[31m$_message\033[0m"
