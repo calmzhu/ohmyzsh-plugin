@@ -30,6 +30,10 @@ jobs:
         run: |
           cp README.md bookmark
           zip -r bookmark.zip bookmark/*
+          cat>_data.yaml<<EOF
+          tag_name: ${GITHUB_REF##*/}
+          EOF
+          data=`yq -P -o json -I=0 _data.yaml`
           curl -L -s -X POST \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
