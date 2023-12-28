@@ -48,7 +48,7 @@ jobs:
             export is_prerelease=false
           fi
           
-          export ZIP_NAME=bookmark-v${GH_RELEASE_VERSION}.zip
+          export ZIP_NAME=bookmark-${GH_RELEASE_VERSION}.zip
           
           
           cp README.md bookmark
