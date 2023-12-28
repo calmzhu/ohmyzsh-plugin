@@ -6,10 +6,11 @@
 
 A ohmyzsh plugin to support bookmark for directories in cmdline.
 
-## Usage
+## Install
 1. Ensure both sed & awk are already installed in you cmdline PATH.
-2. Install plugin to ohmyzsh customer plugin dir
-3. Add **bookmark** to the plugins array in your zshrc file
+1. Ensure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) already installed
+1. Install plugin to ohmyzsh customer plugin dir
+1. Add **bookmark** to the plugins array in your zshrc file
     `plugins=(... bookmark)`
 
 
