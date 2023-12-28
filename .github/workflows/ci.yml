@@ -28,11 +28,8 @@ jobs:
         run: |
           cp README.md bookmark
           zip -r bookmark.zip bookmark/*
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: Shopify/upload-to-release@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
-          files: |
-            bookmark/*
+          name: release
+          path: bookmark
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
