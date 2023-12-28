@@ -42,11 +42,19 @@ jobs:
             export GH_RELEASE_VERSION="${{inputs.tagName}}"
           fi
           
+          if [[ "$GH_RELEASE_VERSION" ~= "-" ]];then
+            export is_prerelease=true
+          else
+            export is_prerelease=false
+          fi
+          
+          
           cp README.md bookmark
           zip -r bookmark-v${GH_RELEASE_VERSION}.zip bookmark/*
           # https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a-release
           cat>_data.yaml<<EOF
           tag_name: ${GH_RELEASE_VERSION}
+          prerelease: ${is_prerelease}
           make_latest: legacy
           EOF
           curl -L -s -X POST \
