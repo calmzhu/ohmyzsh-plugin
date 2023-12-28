@@ -19,8 +19,10 @@ But if you also prefer simple and intuitive solution. this plugin can also be a 
 1. Ensure both sed are already installed in you cmdline PATH.
 1. Ensure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) already installed.
 1. Install plugin to ohmyzsh customer plugin dir.
-    `curl -s https://raw.githubusercontent.com/calmzhu/ohmyzsh-plugin-bookmark/docs/install.zsh | zsh $ZSH_CUSTOM`
-    
+    ```zsh
+    curl -s https://raw.githubusercontent.com/calmzhu/ohmyzsh-plugin-bookmark/main/install.zsh >install.zsh
+    zsh install.zsh $ZSH_CUSTOM
+    ```
 1. Add **bookmark** to the plugins array in your zshrc file.
     `plugins=(... bookmark)`.
 

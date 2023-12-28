@@ -15,7 +15,7 @@ export VERSION=latest
 which sed>/dev/null || error "Cannot found sed in '\$PATH';see $DOC_URL"
 
 export INSTALL_DIR="$ZSH_CUSTOM/plugins"
-[[ -d "$INSTALL_DIR" ]] || error "Error: Cannot found zsh plugin dir'\$ZSH_CUSTOM/plugins';\nsee $DOC_URL"
+[[ -d "$INSTALL_DIR" ]] || error "Error: Cannot found zsh plugin dir '\$ZSH_CUSTOM/plugins';\nsee $DOC_URL"
 
 download_url=`curl -s https://api.github.com/repos/calmzhu/ohmyzsh-plugin-bookmark/releases/$VERSION | \
     grep "browser_download_url" | \
