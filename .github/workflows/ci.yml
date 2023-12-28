@@ -28,7 +28,7 @@ jobs:
         run: |
           cp README.md bookmark
           zip -r bookmark.zip bookmark/*
-      - uses: Shopify/upload-to-release
+      - uses: Shopify/upload-to-release@latest
         with:
           name: release
           path: bookmark
