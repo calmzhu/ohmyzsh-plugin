@@ -4,7 +4,14 @@
 
 ## Description
 
-A ohmyzsh plugin to support bookmark for directories in cmdline.
+Yet another ohmyzsh plugin to quick jump between cmdline directories.
+
+And the design concern is very simple:
+ Add dir full path to bookmarks, give an ordered number for every directory.Use the numbers to switch dir.
+
+There are already lots of [FS Jumping](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins-Overview#fs-jumping) plugins which are all very powerfull.
+But if you also prefer simple and intuitive solution.this plugin can also be a good alternative.
+
 
 ## Install
 1. Ensure both sed & awk are already installed in you cmdline PATH.
@@ -15,7 +22,7 @@ A ohmyzsh plugin to support bookmark for directories in cmdline.
 
 
 
-### Usage
+## Usage
 
 ```bash
 $ l -a ~ #Add home dir to bookmark
