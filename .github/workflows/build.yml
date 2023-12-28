@@ -39,7 +39,7 @@ jobs:
           if [[ -z "${{ inputs.tagName }}" ]];then
             export GH_TAG=${GITHUB_REF##*/}
           else
-            export GH_TAG=${tagName}
+            export GH_TAG="${{inputs.tagName}}"
           fi
           
           cp README.md bookmark
