@@ -16,9 +16,9 @@ But if you also prefer simple and intuitive solution. this plugin can also be a 
 
 ## Install
 1. Ensure both sed are already installed in you cmdline PATH.
-1. Ensure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) already installed
-1. Install plugin to ohmyzsh customer plugin dir
-1. Add **bookmark** to the plugins array in your zshrc file
+1. Ensure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) already installed.
+1. Install plugin to ohmyzsh customer plugin dir.
+1. Add **bookmark** to the plugins array in your zshrc file.
     `plugins=(... bookmark)`
 
 ## Usage
