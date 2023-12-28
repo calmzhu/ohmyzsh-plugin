@@ -13,6 +13,11 @@ on:
       - "v*"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      tagName:
+        required: true
+        description: TagName & ReleaseName to create
+        type: string
 
 permissions:
   contents: write
