@@ -6,11 +6,12 @@
 
 Yet another ohmyzsh plugin to quick jump between cmdline directories.
 
-And the design concern is very simple:
- Add dir full path to bookmarks, give an ordered number for every directory.Use the numbers to switch dir.
+And the design concern is very simple 
 
-There are already lots of [FS Jumping](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins-Overview#fs-jumping) plugins which are all very powerfull.
-But if you also prefer simple and intuitive solution.this plugin can also be a good alternative.
+    Add path to bookmarks, return an ordered number.and use the numbers to switch between dirs finally.
+
+There are also lots of powerfull [FS Jumping](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins-Overview#fs-jumping) plugins if this is too simple for your case.
+But if you also prefer simple and intuitive solution. this plugin can also be a good alternative.
 
 
 ## Install
@@ -19,8 +20,6 @@ But if you also prefer simple and intuitive solution.this plugin can also be a g
 1. Install plugin to ohmyzsh customer plugin dir
 1. Add **bookmark** to the plugins array in your zshrc file
     `plugins=(... bookmark)`
-
-
 
 ## Usage
 
