@@ -42,7 +42,7 @@ jobs:
             export GH_RELEASE_VERSION="${{inputs.tagName}}"
           fi
           
-          if [[ "$GH_RELEASE_VERSION" ~= "-" ]];then
+          if [[ "$GH_RELEASE_VERSION" =~ "-" ]];then
             export is_prerelease=true
           else
             export is_prerelease=false
