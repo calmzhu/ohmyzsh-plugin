@@ -4,7 +4,7 @@
 set_bookmark(){
 
   local bookmark_dir=~/.bookmarks
-  [[ -d $bookmark_dir ]] || mkdir -p [[ $bookmark_dir ]]
+  [[ -d "$bookmark_dir" ]] || mkdir -p "$bookmark_dir"
 
   if [[ ! -z "$1" ]];then
     # User assigned session
