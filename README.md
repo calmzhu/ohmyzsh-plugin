@@ -25,7 +25,11 @@ But if you also prefer simple and intuitive solution. this plugin can also be a 
     ```
 1. Add **bookmark** to the plugins array in your zshrc file.
     `plugins=(... bookmark)`.
-
+1. Since alias conflicts, You must disable zsh default alias to use this plugin
+```
+# add follow line to .zshrc config
+zstyle ':omz:lib:*' aliases no
+```
 ## Usage
 
 ```bash
